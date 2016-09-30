@@ -13,7 +13,17 @@ package com.sk.strngtst.test.demo2;
  */
 public class Passenger {
 
+    private String firstName;
+    private String lastName;
+
 	private int age;
+
+	/**
+     * Instantiates a new passenger.
+     */
+	public Passenger() {
+
+    }
 
 	/**
 	 * Instantiates a new passenger.
@@ -22,6 +32,17 @@ public class Passenger {
 	 */
 	public Passenger(int age) {
 		this.age = age;
+	}
+
+	/**
+     * Instantiates a new passenger.
+     *
+     * @param firstName the first name
+     * @param lastName the last name
+     */
+	public Passenger(String firstName, String lastName) {
+	    this.firstName = firstName;
+	    this.lastName = lastName;
 	}
 
 	/**
@@ -42,4 +63,31 @@ public class Passenger {
 		this.age = age;
 	}
 
+	/**
+     * @return the firstName
+     */
+    public String getFirstName() {
+        return firstName;
+    }
+
+    /**
+     * @param firstName the firstName to set
+     */
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * @return the lastName
+     */
+    public String getLastName() {
+        return lastName;
+    }
+
+    /**
+     * @param lastName the lastName to set
+     */
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
